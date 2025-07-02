@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* Updated font variable from --font-geist-sans to --font-inter */
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* Light Gray */
+    --foreground: 240 10% 3.9%; /* Dark Gray */
+    --card: 0 0% 100%; /* Light Gray */
+    --card-foreground: 240 10% 3.9%; /* Dark Gray */
+    --popover: 0 0% 100%; /* Light Gray */
+    --popover-foreground: 240 10% 3.9%; /* Dark Gray */
+    --primary: 180 100% 25%; /* Teal */
+    --primary-foreground: 0 0% 98%; /* Almost White */
+    --secondary: 195 53% 79%; /* Light Blue */
+    --secondary-foreground: 180 100% 15%; /* Dark Teal/Gray */
+    --muted: 0 0% 96.1%; /* Lighter Gray */
+    --muted-foreground: 0 0% 45.1%; /* Medium Gray */
+    --accent: 195 53% 90%; /* Lighter Blue for hover/accent */
+    --accent-foreground: 180 100% 15%; /* Dark Teal/Gray for accent text */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%; /* Light Gray Border */
+    --input: 0 0% 89.8%; /* Light Gray Input */
+    --ring: 180 100% 25%; /* Teal Ring */
+    --chart-1: 180 76% 61%; /* Teal variant */
+    --chart-2: 195 58% 50%; /* Blue variant */
+    --chart-3: 210 40% 40%; /* Darker Blue */
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 180 100% 25%; /* Teal */
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 195 53% 90%; /* Lighter Blue */
+    --sidebar-accent-foreground: 180 100% 15%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 180 100% 25%; /* Teal Ring */
+  }
+  .dark {
+    --background: 240 10% 3.9%; /* Dark Gray */
+    --foreground: 0 0% 98%; /* Almost White */
+    --card: 240 10% 3.9%; /* Dark Gray */
+    --card-foreground: 0 0% 98%; /* Almost White */
+    --popover: 240 10% 3.9%; /* Dark Gray */
+    --popover-foreground: 0 0% 98%; /* Almost White */
+    --primary: 180 90% 55%; /* Brighter Teal */
+    --primary-foreground: 180 100% 10%; /* Dark Teal/Black */
+    --secondary: 195 53% 40%; /* Darker Light Blue */
+    --secondary-foreground: 0 0% 98%; /* Almost White */
+    --muted: 240 5% 14.9%; /* Darker Gray */
+    --muted-foreground: 0 0% 63.9%; /* Lighter Gray */
+    --accent: 195 53% 30%; /* Darkest Blue for hover/accent */
+    --accent-foreground: 0 0% 98%; /* Almost White for accent text */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5% 14.9%; /* Darker Gray Border */
+    --input: 240 5% 14.9%; /* Darker Gray Input */
+    --ring: 180 90% 55%; /* Brighter Teal Ring */
+    --chart-1: 180 70% 50%; /* Teal variant */
+    --chart-2: 195 60% 45%; /* Blue variant */
+    --chart-3: 210 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%; /* Very Dark Gray */
+    --sidebar-foreground: 0 0% 98%; /* Almost White */
+    --sidebar-primary: 180 90% 55%; /* Brighter Teal */
+    --sidebar-primary-foreground: 180 100% 10%;
+    --sidebar-accent: 195 53% 30%; /* Darkest Blue */
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 180 90% 55%; /* Brighter Teal Ring */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
